@@ -1,11 +1,11 @@
 const logger = require('log4js').getLogger()
-logger.level = process.env.LOG_LEVEL ? process.env.LOG_LEVEL: 'info'
+logger.level = process.env.LOG_LEVEL || 'info'
 
 const HDWalletProvider = require("truffle-hdwallet-provider")
 
 // Default config for MNEMONIC & INFURA_ACCESS_TOKEN
-const MNEMONIC = process.env.MNEMONIC ? process.env.MNEMONIC: ''
-const INFURA_ACCESS_TOKEN = process.env.INFURA_ACCESS_TOKEN ? process.env.INFURA_ACCESS_TOKEN: ''
+const MNEMONIC = process.env.MNEMONIC || ''
+const INFURA_ACCESS_TOKEN = process.env.INFURA_ACCESS_TOKEN || ''
 
 logger.debug(`MNEMONIC: ${MNEMONIC}`)
 logger.debug(`INFURA_ACCESS_TOKEN: ${INFURA_ACCESS_TOKEN}`)
