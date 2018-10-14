@@ -82,6 +82,8 @@ App = {
 
       var account = accounts[0];
 
+      $('#TTAddress').text(account);
+
       App.contracts.TutorialToken.deployed().then(function(instance) {
         tutorialTokenInstance = instance;
 
