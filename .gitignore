@@ -88,3 +88,9 @@ fabric.properties
 
 # Ignore vscode settings
 .vscode/
+
+# Ignore tmp/
+tmp/
+
+# Ignore config
+config.sh
